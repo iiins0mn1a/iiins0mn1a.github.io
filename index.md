@@ -1,4 +1,7 @@
-# my blog
+# ins0mn1a's blog
+## 2022
+### 04
+- day2
 
 ## Welcome to GitHub Pages
 
