@@ -1,7 +1,7 @@
 # ins0mn1a's blog
 ## 2022
 ### 04
-- day2
+- [day2](./2022/04/day2.md)
 
 ## Welcome to GitHub Pages
 
