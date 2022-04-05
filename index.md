@@ -1,17 +1,8 @@
 # ins0mn1a's blog
 ## 2022
-### 04
-- [day2](./2022/04/day2.md)
-
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/iiins0mn1a/iiins0mn1a.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### pwn-training 
+- [pwn.kr-stage1](./2022/pwn.kr/stage1.md)
+- [pwn.tw-stage1](./2022/pwn.tw/stage1.md)
 
 ```markdown
 Syntax highlighted code block
