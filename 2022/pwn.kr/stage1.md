@@ -1,9 +1,9 @@
 # pwn.kr
 
 ## 01 fd
-fd == 	0 -> stdin
-	1 -> stdout
-	2 -> stderror
+fd == 	0 -> stdin;
+	1 -> stdout;
+	2 -> stderror;
 
 ```c
 #include <stdio.h>
