@@ -107,6 +107,74 @@ io.sendlineafter(b'me : ', payload)
 io.interactive()
 ```
 
-## 04 
+## 04 flag
 
-## 05
+reverse challenge..  a UPX packer related tool can solve this problem easily...
+sry.. 
+
+https://www.52pojie.cn/forum.php?mod=viewthread&tid=1148556
+
+thx, my BROTHER lol
+
+## 05 passcode
+
+interesting challenge. 
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+void login(){
+	int passcode1;
+	int passcode2;
+
+	printf("enter passcode1 : ");
+	scanf("%d", passcode1);
+	fflush(stdin);
+
+	// ha! mommy told me that 32bit is vulnerable to bruteforcing :)
+	printf("enter passcode2 : ");
+        scanf("%d", passcode2);
+
+	printf("checking...\n");
+	if(passcode1==338150 && passcode2==13371337){
+                printf("Login OK!\n");
+                system("/bin/cat flag");
+        }
+        else{
+                printf("Login Failed!\n");
+		exit(0);
+        }
+}
+
+void welcome(){
+	char name[100];
+	printf("enter you name : ");
+	scanf("%100s", name);
+	printf("Welcome %s!\n", name);
+}
+
+int main(){
+	printf("Toddler's Secure Login System 1.0 beta.\n");
+
+	welcome();
+	login();
+
+	// something after login...
+	printf("Now I can safely trust you that you have credential :)\n");
+	return 0;	
+}
+```
+
+observe the function `login()`, and during the initialization of passcode1/2, `scanf` is used not correctly, app takes the value of `passcode` as an address, and read a `%d` into this address.
+
+then we find that the value of passcode can be controlled by STACK reuse mechanism.
+
+Due to the function `welcode()` and `login()`'s sharing caller, they share the same stack's bottom, that is bp, which means the control of passcode1/2 can be done even before the calling of `login()`. 
+
+In the function 'welcome()', we input a much-longer data stream than 'login()', which means the whole stack frame of 'login()' can be fully controlled by us. 
+
+Setting the passcode1 to 0x1000 in `welcode()`, and inputting '0x2000' during `login()`, then (int)0x2000 will be writed into address 0x1000. that's an arbitrary write!
+
+then, easy to hijack the control flow to the `system()` backdoor provided by this app.
+
