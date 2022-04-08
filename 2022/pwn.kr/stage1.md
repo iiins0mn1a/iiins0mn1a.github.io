@@ -1,9 +1,10 @@
 # pwn.kr
 
 ## 01 fd
-fd == 0 -> stdin
-	  1 -> stdout
-	  2 -> stderror
+fd == 	0 -> stdin
+	1 -> stdout
+	2 -> stderror
+
 ```c
 #include <stdio.h>
 #include <stdlib.h>
@@ -28,7 +29,9 @@ int main(int argc, char* argv[], char* envp[]){
 }
 ```
 ## 02 col
+```sh
 ./col `python -c "print '\x01' * 16  + '\xE8' + '\x05' + '\xd9' + '\x1D' " `
+```
 hash collision, just find the hash value and fake an input to reach the value.
 
 ```c
