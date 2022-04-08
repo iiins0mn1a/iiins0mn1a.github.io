@@ -3,9 +3,8 @@
 ## 01 start
 checksec, RWX segment existed. maybe shellcode can be used.
 
-a ASM program, calling some sys_call, like `sys_write`/'sys_read`.
+a ASM program, calling some sys_call, like `sys_write`/`sys_read`.
 and reading process is a BOF vulnerability, length of buffer is enough for a simple ROP.
-
 hijack the second argu of `sys_write` to print out the stack info, then ret2shellcode.
 
 ```py
