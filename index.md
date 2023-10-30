@@ -1,33 +1,29 @@
 # ins0mn1a's blog
-## 2022
+Something changes on 2023年10月24日 10:17:20, I would be better, day by day.
+
+## Tech Tips
+- [Bash Script](./TechTips/bash.md)
+- [Programming on C language](./TechTips/c.md)
+- [GDB](./TechTips/gdb.md)
+- [git](./TechTips/git.md)
+- [Python](./TechTips/python.md)
+- [qemu](./TechTips/qemu.md)
+- [ssh](./TechTips/ssh.md)
+
+## Time before
 ### pwn-training 
 - [pwn.kr-stage1](./2022/pwn.kr/stage1.md)
 - [pwn.tw-stage1](./2022/pwn.tw/stage1.md)
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/iiins0mn1a/iiins0mn1a.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## Stage-0: Preparing for Blockchain Security
+### Paper
+- [Reading-stage-0](./stage-0/Paper/Paper-stage-0.md)
+    - on [TOSEM:EthScope](./stage-0/Paper/[TOSEM]Scalable-Attack-SWwu.pdf)
+    - on [usec19:Honeypots](./stage-0/Paper/[usec19]ArtOfScam-CFtorres.pdf)
+### Course
+- [Chainlink-1](./stage-0/Course/chainlink-1.md)
+- [yajin_zhou/lei_wu-1/2](./stage-0/Course/yajinzhou-2.md)
+### CTF
+TBD QAQ...
+### Research
+TBD QAQ...
