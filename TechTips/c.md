@@ -1,5 +1,0 @@
-- compilation database:
-    - 即便是对大型代码库，例如内核，也能进行代码静态纠错；
-    - https://www.cnblogs.com/cong-wang/p/15026530.html
-    - https://edward852.github.io/post/%E7%94%9F%E6%88%90compile_commands.json%E6%96%87%E4%BB%B6/
-    - bear: install-- https://github.com/rizsotto/Bear/blob/master/INSTALL.md
