@@ -16,26 +16,22 @@ I would be better, day by day.
 
 ## Time before
 
-### pwn-training
+### 归档资料
 
-- [pwn.kr-stage1](./2022/pwn.kr/stage1.md)
-- [pwn.tw-stage1](./2022/pwn.tw/stage1.md)
+#### 2022年学习记录
+- [pwn.kr-stage1](./archive/2022/pwn/pwn.kr/stage1.md)
+- [pwn.tw-stage1](./archive/2022/pwn/pwn.tw/stage1.md)
 
-## Stage-0: Preparing for Blockchain Security
+#### 2023年课程笔记
+- [区块链内部机制](./archive/2023/Course/blockchain-Internal.md)
+- [Chainlink学习笔记1](./archive/2023/Course/chainlink-1.md)
+- [Chainlink学习笔记2](./archive/2023/Course/chainlink-2.md)
+- [EVM原理](./archive/2023/Course/EVM-anyway.md)
+- [Solidity示例笔记](./archive/2023/Course/Solidity-by-Example-Note.md)
 
-### Paper
+## 当前学习进度
 
-- [Reading-stage-0](./stage-0/Paper/Paper-note/Paper-stage-0.md)
-  - [TOSEM:EthScope](./stage-0/Paper/[TOSEM]Scalable-Attack-SWwu.pdf), [note](./stage-0/Paper/Paper-note/DeFi-stage-0/[tosem]ethScope-siweiWu.md)
-  - [usec19:Honeypots](./stage-0/Paper/[usec19]ArtOfScam-CFtorres.pdf), [note](./stage-0/Paper/Paper-note/DeFi-stage-0/[usec19]honeypots.md)
-  - [AFT21:sok-defi](./stage-0/Paper/DeFi/Basic/[AFT22]defi-sWerner.pdf), [note](./stage-0/Paper/Paper-note/DeFi-stage-0/[aft21]sok-defi.md)
-  - [xx20: survey of binary code similarity](./stage-0/Paper/DeFi/bytecode/byte-code-similarity-gerneral.pdf), [note](./stage-0/Paper/Paper-note/DeFi-stage-0/[arxiv19]bytecode-similarity-survey.md)
-
-### Course
-
-- [Chainlink](./stage-0/Course/chainlink-1.md)
-- [登链](./stage-0/Course/yajinzhou-2.md)
-- [solidity-by-example](./stage-0/Course/Solidity-by-Example-Note.md)
+（此处可添加最新学习内容）
 
 ### CTF
 
