@@ -1,8 +1,32 @@
 # ins0mn1a's blog
-
-<!-- Something changes on 2023年10月24日 10:17:20,  -->
-
 I would be better, day by day.
+
+
+
+
+## Main: 2025.4
+
+### Theory
+[Breaking the Privacy Barrier: On the Feasibility of Reorganization Attacks on Ethereum Private Transactions](./archive/2025/papers/breaking-privacy-barrier.md)
+
+Abstract:
+- Leverage the Ethereum Reorg Attack to perform Private Transaction Leakage.
+- ACSAC24, CCF-B, Leader: Lin Zhiqiang, Author: Mengya Zhang
+
+---
+
+
+### Practice
+- 
+
+
+## Branch: Recognition of the World
+- Relationships
+- Game
+- AI-Driven Applicaions
+<!-- - distributed system?
+- AI Tech itself -->
+
 
 ## Tech Tips
 
@@ -13,28 +37,6 @@ I would be better, day by day.
 - [Python](./TechTips/python.md)
 - [qemu](./TechTips/qemu.md)
 - [ssh](./TechTips/ssh.md)
-
-
-## Main: 2025.4
-
-### Paper Reading
-[Breaking the Privacy Barrier: On the Feasibility of Reorganization Attacks on Ethereum Private Transactions](./archive/2025/papers/breaking-privacy-barrier.md)
-- Leverage the Ethereum Reorg Attack to perform Private Transaction Leakage.
-- ACSAC24, Leader: Lin Zhiqiang, Author: Mengya Zhang
-
-
-### Practice
-
-
-### Misc
-
-
-### CTF
-TBD QAQ...
-
-### Research
-TBD QAQ...
-
 
 ## Time before
 
