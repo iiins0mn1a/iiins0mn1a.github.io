@@ -1,13 +1,14 @@
-# ins0mn1a's blog
-I would be better, day by day.
+# 印索穆尼亚的日记
+I would be better, day by day, on my own.
 
-
+不要驼背，不要跷二郎腿，多多喝水，我能行，记得刷牙！
+她是一个不会爱的女孩，我也许很爱她，但我**绝不想**和她共度一生。
 
 
 ## Main: 2025.4
 
 ### Theory
-[Breaking the Privacy Barrier: On the Feasibility of Reorganization Attacks on Ethereum Private Transactions](./archive/2025/papers/breaking-privacy-barrier.md)
+**consensus-attack**: [Breaking the Privacy Barrier: On the Feasibility of Reorganization Attacks on Ethereum Private Transactions](./archive/2025/papers/pri%20TXs%20reorg/breaking-privacy-barrier.md)
 
 Abstract:
 - Leverage the Ethereum Reorg Attack to perform Private Transaction Leakage.
@@ -15,6 +16,11 @@ Abstract:
 
 ---
 
+**LLM-attack**: [Demystifying rce vulnerabilities in llm-integrated apps](./archive/2025/papers/LLM%20RCE/LLM%20RCE.md)
+
+Abstract:
+- Detect RCE within LLM-integrated Frameworks;
+- CCS24, CCF-A, Leader: Kai Chen 国科大UCAS, Author: Tong Liu
 
 ### Practice
 - 
