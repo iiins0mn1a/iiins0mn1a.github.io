@@ -22,6 +22,14 @@ Abstract:
 - Detect RCE within LLM-integrated Frameworks;
 - CCS24, CCF-A, Leader: Kai Chen 国科大UCAS, Author: Tong Liu
 
+---
+
+consensus:[Ethereum Spec Basic](./archive/2025/materials/eth2book/eth2book-3.2-types.md)
+
+Abstract:
+- basic elements within consensus implementations;
+- commented specification.
+
 ### Practice
 - 
 

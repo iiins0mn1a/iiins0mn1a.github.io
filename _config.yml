@@ -1,1 +1,42 @@
+# 基本设置
+title: "印索穆尼亚的日记"
+description: "前进"
 theme: jekyll-theme-slate
+url: "https://iiins0mn1a.github.io/" # 替换为你的GitHub Pages地址
+
+# 作者信息
+author:
+  name: "Yujie Bu"
+  email: "yujiebu1998@gmail.com"
+  github: "iiins0mn1a"
+
+# 插件配置
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# 分页设置
+paginate: 5
+paginate_path: "/page:num/"
+
+# 语法高亮
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# # 社交分享
+# share:
+#   twitter: true
+#   linkedin: true
+#   hackernews: true
+
+# 自定义导航
+navigation:
+  - text: "首页"
+    url: "/"
+  - text: "归档"
+    url: "/archive"
+  - text: "技术贴士"
+    url: "/TechTips"
