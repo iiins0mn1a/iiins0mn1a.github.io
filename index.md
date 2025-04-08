@@ -8,7 +8,7 @@ I would be better, day by day, on my own.
 ## Main: 2025.4
 
 ### Theory
-**consensus-attack**: [Breaking the Privacy Barrier: On the Feasibility of Reorganization Attacks on Ethereum Private Transactions](./archive/2025/papers/pri%20TXs%20reorg/breaking-privacy-barrier.md)
+**consensus-attack**: [Breaking the Privacy Barrier: On the Feasibility of Reorganization Attacks on Ethereum Private Transactions](./archive/2025/papers/ptx-reorg/breaking-privacy-barrier.md)
 
 Abstract:
 - Leverage the Ethereum Reorg Attack to perform Private Transaction Leakage.
@@ -16,7 +16,7 @@ Abstract:
 
 ---
 
-**LLM-attack**: [Demystifying rce vulnerabilities in llm-integrated apps](./archive/2025/papers/LLM%20RCE/LLM%20RCE.md)
+**LLM-attack**: [Demystifying rce vulnerabilities in llm-integrated apps](./archive/2025/papers/llm-rce/llm-rce.md)
 
 Abstract:
 - Detect RCE within LLM-integrated Frameworks;
