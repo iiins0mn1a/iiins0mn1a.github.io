@@ -1,9 +1,9 @@
 # 日拱一卒：Keep on Keeping on
-I would be better, day by day, on my own.
-
-不要驼背，不要跷二郎腿，多多喝水，我能行，记得刷牙！
-她是一个不会爱的女孩，我也许很爱她，但我**绝不想**和她共度一生。
-
+## Fragments
+- I would be better, day by day, on my own.
+- 不要驼背，不要跷二郎腿，多多喝水，我能行，记得刷牙！
+- 她是一个不会爱的女孩，我也许很爱她，但我**绝不想**和她共度一生。
+- 幸福就是规律过一天一天
 
 ## Main: 2025.4
 
@@ -24,22 +24,27 @@ Abstract:
 
 ---
 
-**consensus**:[Ethereum Spec Basic](./archive/2025/materials/eth2book/eth2book-3.2-types.md)
+**Consensus**: [Ethereum Spec Basic](./archive/2025/materials/eth2book/eth2book-3.2-types.md)
 
 Abstract:
 - basic elements within consensus implementations;
 - commented specification.
 
+---
+**Consensus**:[Ethereum Book Consensus](./archive/2025/materials/eth2book/eth2book-2.3-consensus.md)
+
+Abstract:
+- basic ideas of Ethereum Consensus and some preliminaries of consensus.
+- Contains a lot of meaningful reading list.
+
 ### Practice
-- 
+- Coding on simulation
 
 
 ## Branch: Recognition of the World
 - Relationships
 - Game
 - AI-Driven Applicaions
-<!-- - distributed system?
-- AI Tech itself -->
 
 
 ## Tech Tips
