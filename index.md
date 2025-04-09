@@ -1,4 +1,4 @@
-# 印索穆尼亚的日记
+# 日拱一卒：Keep on Keeping on
 I would be better, day by day, on my own.
 
 不要驼背，不要跷二郎腿，多多喝水，我能行，记得刷牙！
@@ -8,7 +8,7 @@ I would be better, day by day, on my own.
 ## Main: 2025.4
 
 ### Theory
-**consensus-attack**: [Breaking the Privacy Barrier: On the Feasibility of Reorganization Attacks on Ethereum Private Transactions](./archive/2025/papers/ptx-reorg/breaking-privacy-barrier.md)
+**consensus-attack**: [Breaking the Privacy Barrier: On the Feasibility of Reorganization Attacks on Ethereum Private Transactions](./archive/2025/papers/acsac24-ptx-reorg/breaking-privacy-barrier.md)
 
 Abstract:
 - Leverage the Ethereum Reorg Attack to perform Private Transaction Leakage.
@@ -16,7 +16,7 @@ Abstract:
 
 ---
 
-**LLM-attack**: [Demystifying rce vulnerabilities in llm-integrated apps](./archive/2025/papers/llm-rce/llm-rce.md)
+**LLM-attack**: [Demystifying rce vulnerabilities in llm-integrated apps](./archive/2025/papers/ccs24-llm-rce/llm-rce.md)
 
 Abstract:
 - Detect RCE within LLM-integrated Frameworks;
@@ -24,7 +24,7 @@ Abstract:
 
 ---
 
-consensus:[Ethereum Spec Basic](./archive/2025/materials/eth2book/eth2book-3.2-types.md)
+**consensus**:[Ethereum Spec Basic](./archive/2025/materials/eth2book/eth2book-3.2-types.md)
 
 Abstract:
 - basic elements within consensus implementations;
