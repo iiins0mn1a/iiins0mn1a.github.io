@@ -3,12 +3,22 @@
 - I would be better, day by day, on my own.
 - 不要驼背，不要跷二郎腿，多多喝水，我能行，记得刷牙！
 - 她是一个不会爱的女孩，我也许很爱她，但我**绝不想**和她共度一生。
+- 靠近你就靠近了痛苦，离开你就离开了幸福
 - 幸福就是规律过一天一天
 
 ## Main: 2025.4
 
-### Theory
-**consensus-attack**: [Breaking the Privacy Barrier: On the Feasibility of Reorganization Attacks on Ethereum Private Transactions](./archive/2025/papers/acsac24-ptx-reorg/breaking-privacy-barrier.md)
+### Paper Reading
+**Consensus**: [Uncle Maker: (Time)Stamping Out The Competition in Ethereum](./archive/2025/papers/ccs23-uncle-block/uncle-block.md)
+
+Abstract:
+- To attack Eth1.0 via
+- CCS 23, CCF-A, Leader: Aviv Zohar(The Hebrew University, Israel)
+
+
+---
+
+**Consensus-attack**: [Breaking the Privacy Barrier: On the Feasibility of Reorganization Attacks on Ethereum Private Transactions](./archive/2025/papers/acsac24-ptx-reorg/breaking-privacy-barrier.md)
 
 Abstract:
 - Leverage the Ethereum Reorg Attack to perform Private Transaction Leakage.
@@ -24,6 +34,7 @@ Abstract:
 
 ---
 
+### Materials
 **Consensus**: [Ethereum Spec Basic](./archive/2025/materials/eth2book/eth2book-3.2-types.md)
 
 Abstract:
@@ -31,14 +42,14 @@ Abstract:
 - commented specification.
 
 ---
-**Consensus**:[Ethereum Book Consensus](./archive/2025/materials/eth2book/eth2book-2.3-consensus.md)
+**Consensus**: [Ethereum Book Consensus](./archive/2025/materials/eth2book/eth2book-2.3-consensus.md)
 
 Abstract:
 - basic ideas of Ethereum Consensus and some preliminaries of consensus.
 - Contains a lot of meaningful reading list.
 
 ### Practice
-- Coding on simulation
+**Ethereum Simulation**: [time-driven simulation framework](https://github.com/iiins0mn1a/EthereumSim/commit/1c8c4e1e8e02f1c8cc627d979b7bb735178ce447)
 
 
 ## Branch: Recognition of the World
