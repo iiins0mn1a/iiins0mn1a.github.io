@@ -5,6 +5,9 @@
 - 她是一个不会爱的女孩，我也许很爱她，但我**绝不想**和她共度一生。
 - 靠近你就靠近了痛苦，离开你就离开了幸福
 - 幸福就是规律过一天一天
+- 连续摆烂三天，陷入多巴胺陷阱的我失去延迟满足，照顾自己的身体健康与规律生活是最重要的。
+- 颤抖，归档，删除。DS：*谢谢你当时敢心动，也谢谢你现在敢放手*。
+
 
 ## Main: 2025.4
 
@@ -34,6 +37,14 @@ Abstract:
 
 ---
 
+**LLM-Sec**: [IsolateGPT: An Execution Isolation Architecture for LLM-Based Agentic Systems](./archive/2025/papers/ndss24-isolateGPT/isolateGPT.md)
+
+Abstract:
+- Perform Approach migration from traditional system security, i.e. Isolation, into LLM systems, via (1) well-defined interfaces, (2) user-permission.
+- NDSS25, CCF-A, Leader: Ning Zhang Washington University in St. Louis, Author: Yuhao Wu.
+
+---
+
 ### Materials
 **Consensus**: [Ethereum Spec Basic](./archive/2025/materials/eth2book/eth2book-3.2-types.md)
 
@@ -50,11 +61,19 @@ Abstract:
 
 ### Practice
 **Ethereum Simulation**: [time-driven simulation framework](https://github.com/iiins0mn1a/EthereumSim/commit/1c8c4e1e8e02f1c8cc627d979b7bb735178ce447)
+- Add time-fixed event to compatible original design.
 
+---
+
+**LLM RCE**: [LLM RCE Course Paper](https://sharelatex.cstcloud.cn/project/67e15e811bf7c4bc4f7dbff3)
+- Intro: Research Context / Gap;
+- Related work: MCP / IsolateGPT / LLM-RCE-Frameworks
+
+---
 
 ## Branch: Recognition of the World
 - Relationships
-- Game
+- Game: [**Doing**: From Death Stranding to Flow](./archive/2025/Game/DS/deathstranding.md)
 - AI-Driven Applicaions
 
 

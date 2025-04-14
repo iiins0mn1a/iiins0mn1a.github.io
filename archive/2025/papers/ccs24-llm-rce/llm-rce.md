@@ -1,13 +1,3 @@
-# IsolateGPT
-A systematic framework to mitigate strong Agent.
-
-## Summary
-Agent is strong, and lack of isolation. Try to mitigate the security issue of Strong Agent via isolation.
-
-## Insights
-Agent protocol Fuzzing like MCP. Interfaces between model and tools can be fuzzed.
-
-
 # CCS24: Demystifying rce vulnerabilities in llm-integrated apps
 [paper](https://dl.acm.org/doi/pdf/10.1145/3658644.3690338)
 
