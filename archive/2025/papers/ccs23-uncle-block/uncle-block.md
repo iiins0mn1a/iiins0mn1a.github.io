@@ -2,6 +2,9 @@
 [the paper](https://dl.acm.org/doi/pdf/10.1145/3576915.3616674)
 
 ## Summary
+Find a trivial issue which could affect fork choice and then design an attack to leverage such DAA issue to win fork when the target is benign.
+
+can not increase rewards imediately but can decrease benign validators' reward, wasting their effort. Then the share of attackers may arise.
 
 ## Notes
 Abstract:
@@ -29,16 +32,45 @@ Intro:
 
 ![Attack](image-1.png)
 Attack Overview:
-- Ethereum 1’s **DAA** causes a slight increase in the difficulty of mining if blocks are mined too quickly, and a slight decrease if blocks are mined too slowly. 
+- Ethereum 1’s **DAA** causes a slight increase in the difficulty of mining **if blocks are mined too quickly**, and a slight decrease if blocks are mined too slowly. 
 - As clocks are not perfectly synchronized between nodes, **timestamps** are essentially “cheap-talk”. They can be set by miners **as desired**, but are still required to grow monotonically and cannot be too far into the future. This allows block creators to slightly **change the difficulty** of the block. 
 -  Such small changes do not make mining much harder, but can affect which block nodes choose to extend in case two **conflicting** blocks of the same height are mined. 
 ![RUM Attack](image-2.png)
 
 
-## 存档：
-现在能想到的更高收益的原因，就是平衡，出了一个简单快速块之后，诚实验证者会为了平衡而处理高难块而使得我们的攻击可以再次发起。
+![Theorem 2](image-3.png)
+Profits:
+- Theorem 2 that an attacker’s relative share of mainchain blocks **exceeds** the **fair** share that can be obtained honestly.
+- share inc, and absolute profit remains the same.
 
-诚实验证者付出了代价，收益被我们获得？明天再仔细看看，带笔带pad
+
+![MRP](image-4.png)
+MRP, it's about state space:
+- Normal:
+    - conditions when our attack can **NOT** be performed. Thus, attacker mines normally.
+- Attack:
+    - conditions when requirements are met.
+
+State Transitions:
+- A->N: Honest `[9, 18)`
+    - where requirement meets and goto *Attack* from *Normal*;
+- N->N: Honest `9),[18`
+    - where requirement not meets and still in *Normal*;
+- N->N: Attacker at any time
+    - success to mine a block normally
+- A->N: Attacker `9)`
+    - **succeed** to mine a block to make an uncle.
+- A->A: Honest `[9, 18)`
+    - attack fails but the new block still meets requirements.
+- A->N: Honest `9),[18`
+    - attack fails and the new block can not be hacked.
+- A->N: Attacker `[9`
+    - attack succeed to mine a block but **after the time window**.
+
 ## Conclusion
+Interesting Consensus attack on a different vector.
 
 ## Insights
+Scrutinize the fork choice rule and find all elements to perform Consensus Attacks.
+
+Maybe fuzzing can explore this problem.

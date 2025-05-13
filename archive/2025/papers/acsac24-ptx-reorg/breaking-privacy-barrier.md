@@ -75,7 +75,8 @@ Feasibility: real-one has done
 My Takeaway:
 - Reveal the implication of low-cost Re-org on Private TXs and MEV.
 - Private Tx is highly connectet with MEV.
-
+- How to know the real situation of Proposer Boost?
+- to investigate the whole validator ecosystem?
 
 - TX's Representation:
     - Hash

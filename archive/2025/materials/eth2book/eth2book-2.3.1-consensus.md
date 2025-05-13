@@ -1,6 +1,7 @@
-[eth2book-2.3-consensus](https://eth2book.info/capella/part2/consensus/)
+[eth2book-2.3.1-consensus-preliminaries](https://eth2book.info/capella/part2/consensus/)
 
 # Consensus
+## Intro
 The challenge a consensus protocol seeks to solve is that of building **a reliable distributed system** on top of **unreliable infrastructure**. 
 
 **A Reliable Distributed System**:
@@ -16,9 +17,9 @@ The challenge a consensus protocol seeks to solve is that of building **a reliab
 This formulation makes clear that there is no overall holistic view, no God-mode in which we can see the whole situation in one glance and make a decision. We are simply one of the generals, and our only source of information about the other generals is the messages that we receive - messages that may be correct, or lies, or mistakes based on limited information, or delayed, or modified in transit. We have only a very limited local view, yet we must come to a view about the state of the whole system.
 
 ## BFT solutions
-The first mainstream solution was the Practical Byzantine Fault Tolerance [PBFT](https://www.scs.stanford.edu/nyu/03sp/sched/bfs.pdf)
+The first mainstream solution was the **Practical Byzantine Fault Tolerance** [(PBFT)](https://www.scs.stanford.edu/nyu/03sp/sched/bfs.pdf)
 
-Nakamoto consensus [bitcoin](https://bitcoinpaper.org/bitcoin.pdf), invented by Satoshi Nakamoto for Bitcoin in 2008, takes a fundamentally different approach.
+Nakamoto consensus [(bitcoin)](https://bitcoinpaper.org/bitcoin.pdf), invented by Satoshi Nakamoto for Bitcoin in 2008, takes a fundamentally different approach.
 
 Many, many variants of these and other novel alternatives, such as the [Avalanche family](https://arxiv.org/pdf/1906.08936) of protocols, have since sprung up. Section 7, Related Work, of the [Avalanche white paper](https://arxiv.org/pdf/1906.08936) provides a good survey of the zoo of different consensus protocols currently in use in the blockchain world.
 
