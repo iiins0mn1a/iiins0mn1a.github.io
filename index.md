@@ -44,7 +44,7 @@ Abstract:
 #### **Blockchain**: [SoK:Security and Privacy of Blockchain Interoperability](./archive/2025/papers/sp24-SoK-chain-sec.md/)
 
 Abstract:
-- cross-chain SoK;
+- CCF-A, S&P24, cross-chain bridge SoK;
 - just for some insights about consensus failure's implications.
 
 ---
@@ -60,6 +60,7 @@ Abstract:
 #### **Consensus-Attack**: [Proof-of-Stake at Stake: Predatory, Destructive Attack on PoS Cryptocurrencies](./archive/2025/papers/blockchainn20-pos-attack-coin/pos-attack-coin.md)
 
 Abstract:
+- CCF-A, blockchainn20
 - A saying goes: Consensus Attack in PoS in not profitable since performing attack need a lot of native token(staking power) and a successful attack would result in value decrease of the native token. 
 - But Attacker can actually do the **shorting/short selling** to earn profits.
 
@@ -70,6 +71,11 @@ Abstract:
 Abstract:
 - Evaluate if validators can accumulate 1/3 stake in a classical PoS system.
 
+#### **Consensus**: [The Forking Way: When TEEs Meet Consensus](./archive/2025/papers/ndss25-TEE-Consensus/tee-consensus.md)
+
+Abstract:
+- CCF-A, NDSS25
+####
 
 ### Materials
 

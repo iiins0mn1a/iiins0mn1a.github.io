@@ -98,6 +98,9 @@ Plenitude Rule:
 Economic Finality:
 -  Even though Economic Finality does not eliminate Long Range attacks, it does make them much less probable as validators are now further disincentivised in conducting any sort of attack against the network.
 
+**TEE(Trusted Execution Environment)**
+- the private/public key is gen-ed within TEE and will never leave TEE, then they can not be leaked.
+- no leaked private key, no long-range attack.
 
 # conclusion:
 Therefore, it is being broadly adopted in various domains serving as the backbone of many applications [46].
