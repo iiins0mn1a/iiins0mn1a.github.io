@@ -1,9 +1,10 @@
 # 日拱一卒：Keep on Keeping on
 ## Fragments
 - I would be better, day by day, on my own.
-- 不要驼背，不要跷二郎腿，多多喝水，我能行，记得刷牙！
+- 世界上唯一一个与真实的我共处过的人离开了。
+- 于是，时间开始流动。2025.7.18
 
-## Main: 2025.4
+## Main: 2025 Summer
 
 ### Paper Reading
 
@@ -71,10 +72,36 @@ Abstract:
 Abstract:
 - Evaluate if validators can accumulate 1/3 stake in a classical PoS system.
 
+---
+
 #### **Consensus**: [The Forking Way: When TEEs Meet Consensus](./archive/2025/papers/ndss25-TEE-Consensus/tee-consensus.md)
 
 Abstract:
 - CCF-A, NDSS25
+- TEE x Blockchain Applications are divided into 4 types: contract / consensus / L2 / apps;
+- Mitigations: stateless / ephemeral IDs / whitelist matual trust or detection / rely on chain for serializing; 
+
+---
+
+#### **Consensus**: [Everything is a Race and Nakamoto Always Wins](./archive/2025/papers/ccs20-nakamoto-analysis/nakamoto-analysis.md)
+
+Abstract:
+- CCS 20, David Tse, Analytical works of Nakamoto Consensus
+- To prove Private-Double-Spending is the worst case of Consensus Attack;
+- Combine true threshold with private-attack threshold with two novel and un-realistic concepts: blocktree partitioning and nakamoto blocks.
+
+---
+
+#### **Consensus**: [Nakamoto Consensus under Bounded Processing Capacity](./archive/2025/papers/ccs24-nakamoto-bounded/nakamoto-bounded.md)
+
+Abstract:
+- CCS24, David Tse, Analytical works of Nakamoto Consensus.
+- Teasing Attack, use network strategies to slow down honest validators.
+
+---
+
+#### NExt
+
 ####
 
 ### Materials
@@ -86,14 +113,6 @@ Abstract:
 Abstract:
 - basic elements within consensus implementations;
 - commented specification.
-
----
-
-#### **Consensus**: [Ethereum Book Consensus-1](./archive/2025/materials/eth2book/eth2book-2.3.1-consensus.md)
-
-Abstract:
-- basic ideas of Ethereum Consensus and some preliminaries of consensus.
-- Contains a lot of meaningful reading list.
 
 ---
 
@@ -122,7 +141,20 @@ Abstract:
 
 ---
 
-#### 
+#### **Consensus**: [Ethereum Book Consensus](./archive/2025/materials/eth2book/eth2book-2.3.1-consensus.md)
+
+Abstract:
+- basic ideas of Ethereum Consensus and some preliminaries of consensus.
+- Contains a lot of meaningful reading list.
+- [More](./archive/2025/materials/eth2book/eth2book-2.3.2-consensus.md)
+- [More Again](./archive/2025/materials/eth2book/eth2book-2.3.3-4-consensus.md)
+
+---
+
+#### **Consensus**: [Ethereum Book Staking](./archive/2025/materials/eth2book/eth2book-2.3.7-staking.md)
+
+Abstract:
+- 
 
 
 ---
@@ -152,14 +184,17 @@ Abstract:
 ---
 
 
+## Main: 2025 Fall
+
 ## Branch: Recognition of the World
-- Game: [**Doing**: From Death Stranding to Flow](./archive/2025/Game/DS/deathstranding.md)
+- Game: 
+    - [**Doing**: From Death Stranding to Flow](./archive/2025/Game/DS/deathstranding.md)
+    - Love: [TBD] Combine Love with some Game
 - Personality: [**Doing**: Being Aggressive](./archive/2025/Personality/Aggressive.md)
 - AI-Driven Applicaions
 
 
 ## Tech Tips
-
 - [Bash](./TechTips/bash.md)
 - [C](./TechTips/c.md)
 - [GDB](./TechTips/gdb.md)
@@ -168,8 +203,8 @@ Abstract:
 - [qemu](./TechTips/qemu.md)
 - [ssh](./TechTips/ssh.md)
 - [go](./TechTips/go.md)
+- [docker](./TechTips/docker.md)
 
 ## Time before
-
 - [2022](./archive/2022/summary.md)
 - [2023](./archive/2023/summary.md)

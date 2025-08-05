@@ -25,6 +25,7 @@ Sybil Attack:
 Race Attack:
 - implementation issue about probabilistic finality;
 - some transactions would be considered as valid within the recommendation period, as a weak valid;
+- 部分服务的确认周期可能短于finalization周期；
 - attacker can exploit such gap to double spend;
 
 BRIBERY ATTACK:

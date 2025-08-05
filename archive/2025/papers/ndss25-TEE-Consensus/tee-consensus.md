@@ -72,6 +72,9 @@ Key tech to defend:
 - fixed set of clients that monitors the enclave to detect forks;
 - serialize the enclave state by using the ledger.
 
+# Key figures:
+![1](image.png)
+![2](image-1.png)
 
 
 ##
