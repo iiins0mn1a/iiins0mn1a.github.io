@@ -234,3 +234,13 @@ time="2025-07-30 05:01:34.239" level=info msg="reorg event" depth=4 slot=300 tot
         -  固定ip;
             - 先用docker完成一次；
             - 然后使用networkSim；
+- 2025年8月6日 13:03:24
+    - TBD：完成docker compose 组网
+        - 单geth，多beacon，多多validator架构；
+        - 使用bootstrp-node解决组网问题
+    - 完成docker-compose组网;
+    - 但是无法加入ns3模块;
+    - 使用ns3 无法建立以太坊网络；！！！
+    - why！！！
+
+    我尝试建立一个以太坊测试网，其中rpc流量基于docker默认网络，而beacon-chain之间的组网基于ns-3模拟的网络环境，因此我有了现有的实现，main.sh，不过现在遇到一个问题，ns-3网络模拟正常运行，可以从tap设备抓到ns-3的流量包，但是两个beacon-chain之间却无法建立p2p网络，他们无法加入同一个网络，导致网络分片，请帮我找找问题。

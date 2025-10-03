@@ -1,8 +1,6 @@
 # 日拱一卒：Keep on Keeping on
 ## Fragments
 - I would be better, day by day, on my own.
-- 世界上唯一一个与真实的我共处过的人离开了。
-- 于是，时间开始流动。2025.7.18
 
 ## Main: 2025 Summer
 
