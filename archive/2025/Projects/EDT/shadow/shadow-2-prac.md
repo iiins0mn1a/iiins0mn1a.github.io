@@ -13,3 +13,13 @@ still about msync is not implemented;
 - busy loop can decrease the performance significantly;
 - timer/ticker is OK;
 
+## Go-Ethereum: Geth/Prysm
+- dynamic version of Geth/Prysm;
+    - they are already dynamically compiled.
+- shadow version of Geth/Prysm;
+    - ok for "--version"
+- shadow testnet;
+    - NO, for un-implemented syscalls;
+    - How2?:
+        - A LLM-Agent-based Generator;
+        - Learn！ Learn quickly!
